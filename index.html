@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Savory Portfolio</title>
+    
+    <!-- Google Analytics -->
+    <script>
+        !function(e,a,t,n,g,c,o){
+            e.GoogleAnalyticsObject="ga",e.ga=e.ga||function(){
+                (e.ga.q=e.ga.q||[]).push(arguments)
+            },e.ga.l=1*new Date;
+            c=a.createElement(t),o=a.getElementsByTagName(t)[0];
+            c.async=1,c.src="https://www.google-analytics.com/analytics.js";
+            o.parentNode.insertBefore(c,o)
+        }(window,document,"script");
+        ga("create", "UA-71927586-1", "auto");
+        ga("send", "pageview");
+    </script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <img src="profile.jpg" alt="Justin Savory" class="profile-pic">
+            <h1>Justin Savory</h1>
+            <p class="subtitle">Mobile & Platform Architect</p>
+        </header>
+
+        <!-- Tab Navigation -->
+        <nav class="tabs">
+            <button class="tab-button active" onclick="showTab('bio')">About</button>
+            <button class="tab-button" onclick="showTab('projects')">Projects</button>
+            <button class="tab-button" onclick="showTab('contact')">Contact</button>
+        </nav>
+
+        <!-- Tab Content -->
+        <div id="bio" class="tab-content active">
+            <h2>About Me</h2>
+            <p>I am a seasoned Mobile & Platform Architect with extensive experience in iOS development, scalable systems, and cloud integration. I've led projects that drive millions in revenue, improve performance, and enhance accessibility.</p>
+        </div>
+
+        <div id="projects" class="tab-content">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>EquitySlice</h3>
+                <p>Architected & launched an equity calculation app using SwiftUI and CoreData with 10,000+ downloads and a 5-star rating.</p>
+            </div>
+            <div class="project">
+                <h3>Moola!</h3>
+                <p>Created a funds management platform, leveraging LLMs and integrated with market APIs, to support diverse income types.</p>
+            </div>
+            <div class="project">
+                <h3>The New Yorker Today</h3>
+                <p>Developed key features for The New Yorker Today app, which achieved 50M+ downloads and generated over $150M in annual subscription revenue.</p>
+                <p><a href="https://apps.apple.com/us/app/the-new-yorker-today/id1081530898" target="_blank">View App on the App Store</a></p>
+            </div>
+        </div>
+
+        <div id="contact" class="tab-content">
+            <h2>Contact</h2>
+            <p>Email: justin.savory@icloud.com</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/jsavoryl" target="_blank">linkedin.com/in/jsavoryl</a></p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
