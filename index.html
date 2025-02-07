@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Justin Savory Portfolio</title>
-    
+
     <!-- Google Analytics -->
     <script>
-        !function(e,a,t,n,g,c,o){
-            e.GoogleAnalyticsObject="ga",e.ga=e.ga||function(){
-                (e.ga.q=e.ga.q||[]).push(arguments)
-            },e.ga.l=1*new Date;
-            c=a.createElement(t),o=a.getElementsByTagName(t)[0];
-            c.async=1,c.src="https://www.google-analytics.com/analytics.js";
-            o.parentNode.insertBefore(c,o)
-        }(window,document,"script");
+        !function(e, a, t, n, g, c, o) {
+            e.GoogleAnalyticsObject = "ga";
+            e.ga = e.ga || function() {
+                (e.ga.q = e.ga.q || []).push(arguments);
+            };
+            e.ga.l = 1 * new Date();
+            c = a.createElement(t), o = a.getElementsByTagName(t)[0];
+            c.async = 1;
+            c.src = "https://www.google-analytics.com/analytics.js";
+            o.parentNode.insertBefore(c, o);
+        }(window, document, "script");
         ga("create", "UA-71927586-1", "auto");
         ga("send", "pageview");
     </script>
@@ -38,33 +41,85 @@
             <button class="tab-button" onclick="showTab('contact')">Contact</button>
         </nav>
 
-        <!-- Tab Content -->
+        <!-- Tab Content: About Me -->
         <div id="bio" class="tab-content active">
             <h2>About Me</h2>
-            <p>I am a seasoned Mobile & Platform Architect with extensive experience in iOS development, scalable systems, and cloud integration. I've led projects that drive millions in revenue, improve performance, and enhance accessibility.</p>
+            <p>
+                I've spent over 20 years building technology that’s meant to push boundaries and make things better.
+                I started with <strong>Nexus</strong>, a network of digital gaming centers I founded from scratch.
+                I built the machines myself—bare hands, custom rigs—and learned quickly what scalability and uptime
+                really mean when you've got a room full of people depending on your setup. It wasn’t flashy. It was raw,
+                hands-on work, but it’s where I realized that solving hard problems with tech is what I’m meant to do.
+            </p>
+            <p>
+                Later, I worked with <strong>Apple</strong>, helping build out Apple Retail’s technology infrastructure.
+                Apple taught me the importance of refinement—not just making things function, but making them feel
+                invisible when they work perfectly. Simplicity at scale. That lesson has stuck with me ever since.
+            </p>
+            <p>
+                Since then, I’ve worked with teams at places like <strong>Amazon</strong>, <strong>One Medical</strong>,
+                <strong>Condé Nast</strong>, and <strong>Citizen</strong>, tackling complex systems and real-world challenges.
+                At <strong>One Medical</strong>, I built treatment workflows that now handle hundreds of thousands of
+                interactions each month. At <strong>Citizen</strong>, I worked on core app features that scaled to
+                20 million downloads. And at <strong>The New Yorker Today</strong>, I led efforts to drive secure,
+                scalable subscription features that helped generate over $150M in revenue.
+            </p>
+            <p>
+                I specialize in <strong>mobile development</strong>, <strong>platform scalability</strong>, and
+                <strong>cloud services</strong>, but I don’t get caught up in buzzwords. For me, it's about creating tech
+                that’s fast, solid, and gets out of the way. I like systems that don’t break under pressure. I like
+                working with teams who care about getting it right—whether that’s optimizing performance, ensuring
+                accessibility, or leading cross-functional projects to deliver something real.
+            </p>
+            <p>
+                I've also built platforms like <strong>EquitySlice</strong>, a tool that simplifies equity calculations for users,
+                and <strong>Moola!</strong>, a financial management platform built on live market APIs and machine learning.
+                Both were born out of a need to streamline complicated systems, breaking them down into something
+                people can actually use and trust.
+            </p>
+            <p>
+                At the end of the day, I'm about building. Fixing. Scaling. Tearing down what's unnecessary and leaving behind
+                tech that lasts. Whether it’s designing infrastructure for a product that millions rely on or launching
+                new platforms, I’m here to make the impossible feel inevitable.
+            </p>
         </div>
 
+        <!-- Tab Content: Projects -->
         <div id="projects" class="tab-content">
             <h2>Projects</h2>
             <div class="project">
                 <h3>EquitySlice</h3>
-                <p>Architected & launched an equity calculation app using SwiftUI and CoreData with 10,000+ downloads and a 5-star rating.</p>
+                <p>
+                    Calculate your equity using a real world, non-baias formula.
+                </p>
             </div>
             <div class="project">
                 <h3>Moola!</h3>
-                <p>Created a funds management platform, leveraging LLMs and integrated with market APIs, to support diverse income types.</p>
+                <p>
+                    A modern funds management platform, leveraging LLMs and integrated with market APIs.
+                </p>
             </div>
             <div class="project">
                 <h3>The New Yorker Today</h3>
-                <p>Developed key features for The New Yorker Today app, which achieved 50M+ downloads and generated over $150M in annual subscription revenue.</p>
-                <p><a href="https://apps.apple.com/us/app/the-new-yorker-today/id1081530898" target="_blank">View App on the App Store</a></p>
+                <p>
+                    The iconic magazine, reimagined digitally.  Articles, cartoons, culture.
+                </p>
+                <p>
+                    <a href="https://apps.apple.com/us/app/the-new-yorker-today/id1081530898" target="_blank">
+                        View App on the App Store
+                    </a>
+                </p>
             </div>
         </div>
 
+        <!-- Tab Content: Contact -->
         <div id="contact" class="tab-content">
             <h2>Contact</h2>
-            <p>Email: justin.savory@icloud.com</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/jsavoryl" target="_blank">linkedin.com/in/jsavoryl</a></p>
+            <p>Email: <a href="mailto:justin.savory@icloud.com">justin.savory@icloud.com</a></p>
+            <p>
+                LinkedIn:
+                <a href="https://linkedin.com/in/jsavoryl" target="_blank">linkedin.com/in/jsavoryl</a>
+            </p>
         </div>
     </div>
 
