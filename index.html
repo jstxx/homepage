@@ -124,43 +124,45 @@
             </div>
         </div>
 
-        <!-- Tab Content: Contact -->
-        <div id="contact" class="tab-content">
-            <h2>Let's Connect</h2>
+<!-- Tab Content: Contact -->
+<div id="contact" class="tab-content">
+    <h2>Let's Connect</h2>
 
-                 <form action="https://formsubmit.co/justin.savory@icloud.com" method="POST" class="contact-form" id="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your name" required>
+    <form action="https://formsubmit.co/9a7ca56d58631298c2a62880b749082e" method="POST" class="contact-form" id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
 
-                <input type="email" id="email" name="email" placeholder="Your email" required>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write a message..." required></textarea>
 
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Write a message..." required></textarea>
+        <!-- CAPTCHA -->
+        <label for="captcha">What is <span id="captcha-question"></span>?</label>
+        <input type="text" id="captcha" name="captcha" placeholder="Enter answer" required>
+        <div id="captcha-error" class="error-message"></div>
 
-                <button type="submit">Send Message</button>
+        <!-- Hidden inputs for FormSubmit.co -->
+        <input type="hidden" name="_next" value="jestics.com/index.html?submitted=true">
+        <input type="hidden" name="_captcha" value="false">
 
-                <div id="confirmation-message" class="hidden">
-                    <p>Thank you! Your message has been sent successfully. I'll get back to you soon.</p>
-                </div>
+        <button type="submit" id="submit-button">Send Message</button>
+    </form>
 
-<br/><br/>
- <div class="centered-links-container">
-    <div class="neumorphic-links">
-        <a href="https://github.com/jstxx" target="_blank" class="btn">
-            <i class="fab fa-github btn-icon"></i> GitHub
-        </a>
-        <a href="https://linkedin.com/in/jsavoryl" target="_blank" class="btn">
-            <i class="fab fa-linkedin btn-icon"></i> LinkedIn
-        </a>
+    <div id="confirmation-message" class="hidden">
+        <p>Thank you! Your message has been sent successfully. I'll get back to you soon.</p>
+    </div>
+
+    <br/><br/>
+    <div class="centered-links-container">
+        <div class="neumorphic-links">
+            <a href="https://github.com/jstxx" target="_blank" class="btn">
+                <i class="fab fa-github btn-icon"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/jsavoryl" target="_blank" class="btn">
+                <i class="fab fa-linkedin btn-icon"></i> LinkedIn
+            </a>
+        </div>
     </div>
 </div>
-
-
-            </form>
-
-
-            </p>
-        </div>
-    </div>     
 
     <!-- Script -->
     <script src="script.js"></script>

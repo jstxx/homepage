@@ -1,3 +1,4 @@
+// Function to switch between tabs (already in your code)
 function showTab(tabId) {
     // Hide all tab contents
     document.querySelectorAll('.tab-content').forEach(tab => {
@@ -14,39 +15,53 @@ function showTab(tabId) {
     document.querySelector(`.tab-button[onclick="showTab('${tabId}')"]`).classList.add('active');
 }
 
-// Add this code to handle the contact form submission
+// When the DOM is ready
 document.addEventListener('DOMContentLoaded', function () {
+    // --- CAPTCHA Setup ---
     const contactForm = document.getElementById('contact-form');
+    const captchaQuestion = document.getElementById('captcha-question');
+    const captchaInput = document.getElementById('captcha');
+    const captchaError = document.getElementById('captcha-error');
 
+    // Generate a simple math CAPTCHA (e.g., "3 + 5")
+    const num1 = Math.floor(Math.random() * 10) + 1;
+    const num2 = Math.floor(Math.random() * 10) + 1;
+    const correctAnswer = num1 + num2;
+    captchaQuestion.textContent = `${num1} + ${num2}`;
+
+    // On form submission, validate the CAPTCHA first.
     if (contactForm) {
-        contactForm.addEventListener('submit', async function (event) {
+        contactForm.addEventListener('submit', function (event) {
+            // Prevent the form from submitting immediately.
             event.preventDefault();
 
-            // Gather form data
-            const formData = new FormData(contactForm);
-
-            try {
-                // Send the form data to the form's action endpoint
-                const response = await fetch(contactForm.action, {
-                    method: 'POST',
-                    body: formData,
-                    headers: {
-                        'Accept': 'application/json'
-                    }
-                });
-
-                if (response.ok) {
-                    // Hide the form and show the confirmation message
-                    contactForm.reset();
-                    contactForm.classList.add('hidden');
-                    document.getElementById('confirmation-message').classList.remove('hidden');
-                } else {
-                    alert('Something went wrong. Please try again later.');
-                }
-            } catch (error) {
-                console.error('Error submitting the form:', error);
-                alert('There was an error sending your message.');
+            // Check if the user's answer is correct.
+            if (parseInt(captchaInput.value, 10) !== correctAnswer) {
+                captchaError.textContent = "Incorrect CAPTCHA. Please try again.";
+                captchaError.style.display = "block";
+                return; // Stop here if the answer is wrong.
+            } else {
+                // Clear any previous error message.
+                captchaError.textContent = "";
+                captchaError.style.display = "none";
+                // If CAPTCHA is correct, submit the form normally.
+                contactForm.submit();
             }
         });
+    }
+
+    // --- Confirmation Message Handling ---
+    // If the URL contains ?submitted=true then the form was submitted successfully.
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('submitted') === 'true') {
+        // Hide the contact form.
+        if (contactForm) {
+            contactForm.classList.add('hidden');
+        }
+        // Show the confirmation message.
+        const confirmationMessage = document.getElementById('confirmation-message');
+        if (confirmationMessage) {
+            confirmationMessage.classList.remove('hidden');
+        }
     }
 });
