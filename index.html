@@ -142,12 +142,13 @@
 
         <!-- CAPTCHA -->
         <label for="captcha">What is <span id="captcha-question"></span>?</label>
+        <input type="text" name="_honey" style="display:none">
         <input type="text" id="captcha" name="captcha" placeholder="Enter answer" required>
         <div id="captcha-error" class="error-message"></div>
+        <input type="hidden" name="_blacklist" value="optimization,SEO">
 
         <!-- Hidden inputs for FormSubmit.co -->
         <input type="hidden" name="_next" value="https://jestics.com/index.html?submitted=true">
-        <input type="hidden" name="_captcha" value="false">
 
         <button type="submit" id="submit-button">Send Message</button>
     </form>
