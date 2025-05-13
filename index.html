@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin Savory Portfolio</title>
+    <!-- Google Analytics script -->
+    <script>
+        // Function to initialize Google Analytics
+        !function(window, document, scriptName, propertyId, trackerName) {
+            window.GoogleAnalyticsObject = "ga";
+            window.ga = window.ga || function() {
+                (window.ga.q = window.ga.q || []).push(arguments);
+            };
+            window.ga.l = 1 * new Date();
+            scriptElement = document.createElement(scriptName),
+            firstScriptTag = document.getElementsByTagName(scriptName)[0];
+            scriptElement.async = 1;
+            scriptElement.src = "https://www.google-analytics.com/analytics.js";
+            firstScriptTag.parentNode.insertBefore(scriptElement, firstScriptTag);
+        }(window, document, "script", "UA-71927586-1", "auto");
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <img src="avatar.png" alt="Justin Savory" class="profile-pic">
+            <h1>Justin Savory</h1>
+            <p class="subtitle">Mobile & Platform Architect</p>
+
+                <div id="confirmation-message" class="hidden">
+                    <p>Thank you! Your message has been sent successfully. I'll get back to you soon.</p>
+                </div>
+    
+        </header>
+        <!-- Tab Navigation -->
+        <nav class="tabs">
+            <button class="tab-button active" onclick="showTab('bio')">About</button>
+            <button class="tab-button" onclick="showTab('projects')">Projects</button>
+            <button class="tab-button" onclick="showTab('contact')">Contact</button>
+        </nav>
+
+        <!-- Tab Content: About Me -->
+        <div id="bio" class="tab-content active">
+            <h2>Greetings!</h2>
+            <div class="about-me-container">            
+            <div class="about-me-wrapper">
+              <img src="profile.jpg" alt="Justin Savory" class="profile-pic-about">
+                <!-- Add a new div for buttons -->
+                  <br/>
+                        <a href="https://github.com/jstxx" target="_blank" class="btn">
+                            <i class="fab fa-github btn-icon"></i> GitHub
+                        </a>
+                        <br/>
+                        <a href="https://linkedin.com/in/jsavoryl" target="_blank" class="btn">
+                            <i class="fab fa-linkedin btn-icon"></i> LinkedIn
+                        </a>
+            </div>
+
+            <p class="description">
+                I'm Justin, and I've spent over 20 years building technology that’s meant to push boundaries and make things better.
+                I started with <strong>Nexus</strong>, a network of digital gaming centers I founded to help gamers find and foster meaningful connections with each other.
+                I built the machines myself—bare hands, custom rigs—and learned quickly what scalability and uptime
+                really mean when you've got a room full of people depending on your setup. It was raw,
+                hands-on work, but it’s where I realized that solving hard problems with tech is what I’m meant to do.
+        <br/><br/>
+                Later, I worked with <strong>Apple</strong>, helping build out their infrastructure.
+                Apple taught me the importance of refinement—not just making things function, but making them feel
+                invisible when they work perfectly. Simplicity at scale. That lesson has stuck with me ever since.
+          <br/><br/>
+                Since then, I’ve worked with teams at places like <strong>Amazon</strong>, <strong>One Medical</strong>,
+                <strong>Condé Nast</strong>, and <strong>Citizen</strong>, tackling complex systems and real-world challenges.
+                At <strong>One Medical</strong>, I built treatment workflows that now handle hundreds of thousands of
+                interactions each month. At <strong>Citizen</strong>, I worked on core app features that scaled to
+                20 million downloads. And at <strong>The New Yorker Today</strong>, I led efforts to drive secure,
+                scalable subscription features that helped generate significant revenue.
+          <br/><br/>
+                I specialize in <strong>mobile development</strong>, <strong>platform scalability</strong>, and
+                <strong>cloud services</strong>. For me, it's about creating tech
+                that’s fast, solid, and gets out of the way. I like systems that don’t break under pressure. I like
+                working with teams who care about getting it right—whether that’s optimizing performance, ensuring
+                accessibility, or leading cross-functional projects to deliver something real.
+          <br/><br/>
+                I've also built platforms like <strong>EquitySlice</strong>, a tool that simplifies equity calculations for users,
+                and <strong>Moola AI</strong>, a financial management platform built on live market APIs and machine learning.
+                Both were born out of a need to streamline complicated systems, breaking them down into something
+                people can actually use and trust.
+         <br/><br/>
+                At the end of the day, I'm about building. Fixing. Scaling. Tearing down what's unnecessary and leaving behind
+                tech that lasts. Whether it’s designing infrastructure for a product that millions rely on or launching
+                new platforms, I’m here to make the impossible feel inevitable.
+            </p>
+            </div>
+        </div>
+<!-- Tab Content: Projects -->
+        <div id="projects" class="tab-content">
+          <h2>Projects</h2>
+          <p class="description">Projects I have initiated and successfully brought to market, including leading development efforts and overseeing product launch strategies</p>
+          <div class="project-cards">
+            <!-- EquitySlice -->
+            <div class="project-card">
+              <h3>EquitySlice</h3>
+              <img src="eqslice.png" alt="EquitySlice background" class="bg-img">
+
+              <p class="description">Calculate your equity using a real-world, non-bias formula.</p>
+              <div class="project-links">
+                <a href="https://apps.apple.com/jp/app/equityslice/id1522811888?l=en-US" target="_blank">View App on the App Store</a>
+              </div>
+            </div>
+            <!-- Moola AI -->
+            <div class="project-card">
+              <h3>Moola AI</h3>
+              <img src="moolabg.png" alt="Moola background" class="bg-img">
+
+              <p class="description">A modern funds management platform, leveraging NLP, integrated with market APIs.</p>
+              <div class="project-links">
+                <a href="https://apps.apple.com/us/app/moola-ai/id6740915918" target="_blank">View App on the App Store</a>
+              </div>
+            </div>
+        
+            <!-- The New Yorker Today -->
+            <div class="project-card">
+              <h3>The New Yorker Today</h3>
+              <img src="nyerbg.png" alt="New Yorker background" class="bg-img">
+
+              <p class="description">The iconic magazine, reimagined digitally. Articles, cartoons, culture.</p>
+              <div class="project-links">
+                <a href="https://apps.apple.com/us/app/the-new-yorker-today/id1081530898" target="_blank">View App on the App Store</a>
+              </div>
+            </div>
+        
+            <!-- HBO / Max -->
+            <div class="project-card">
+              <h3>HBO.com</h3>
+              <img src="maxbg.png" alt="HBO background" class="bg-img">
+
+              <p class="description">Stream HBO originals, movies, and more on Max, the new home for HBO content.</p>
+              <div class="project-links">
+                <a href="https://apps.apple.com/us/app/max-stream-hbo-tv-movies/id1666653815" target="_blank">View App on the App Store</a>
+                <span class="project-link-separator">|</span>
+                <a href="https://www.hbo.com/" target="_blank">Visit HBO.com</a>
+              </div>
+            </div>
+            <!-- Blockchain.com -->
+            <div class="project-card">
+              <h3>Blockchain.com</h3>
+              <img src="blockchainbg.png" alt="Blockchain background" class="bg-img">
+
+              <p class="description">All-in-one crypto wallet for buying, selling, and managing digital assets securely.</p>
+              <div class="project-links">
+                <a href="https://apps.apple.com/us/app/blockchain-com-buy-btc-sol/id493253309" target="_blank">View App on the App Store</a>
+                <span class="project-link-separator">|</span>
+                <a href="https://www.blockchain.com/" target="_blank">Visit Website</a>
+              </div>
+            </div>
+            <!-- Citizen.com -->
+            <div class="project-card">
+              <h3>Citizen</h3>
+              <img src="citizenbg.png" alt="Blockchain background" class="bg-img">
+              <p class="description">Location-based safety alerts and real-time incident updates for your city.</p>
+              <div class="project-links">
+                <a href="https://apps.apple.com/us/app/citizen/id1039889567" target="_blank">View App on the App Store</a>
+                <span class="project-link-separator">|</span>
+                <a href="https://citizen.com/" target="_blank">Visit Website</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- Tab Content: Contact -->
+<div id="contact" class="tab-content">
+    <h2>Let's Connect</h2>
+
+    <form action="https://formsubmit.co/9a7ca56d58631298c2a62880b749082e" method="POST" class="contact-form" id="contact-form">
+        <input type="text" id="name" name="name" placeholder="Your name" required>
+        <input type="email" id="email" name="email" placeholder="Your email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Write a message..." required></textarea>
+
+        <!-- CAPTCHA -->
+        <label for="captcha">What is <span id="captcha-question"></span>?</label>
+        <input type="text" name="_honey" style="display:none">
+        <input type="text" id="captcha" name="captcha" placeholder="Enter answer" required>
+        <div id="captcha-error" class="error-message"></div>
+        <input type="hidden" name="_blacklist" value="optimization,SEO">
+
+        <!-- Hidden inputs for FormSubmit.co -->
+        <input type="hidden" name="_next" value="https://jestics.com/index.html?submitted=true">
+
+        <button type="submit" id="submit-button">Send Message</button>
+    </form>
+    <br/><br/>
+</div>
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
